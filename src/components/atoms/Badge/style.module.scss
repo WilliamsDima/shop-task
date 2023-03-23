@@ -1,0 +1,34 @@
+@import '../../../../styles/typography.scss';
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/animation.scss';
+
+.badge {
+  background-color: $gray;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom-left-radius: 0;
+
+  &.anim {
+    @extend %pulseAnim;
+  }
+
+  .badgeText {
+    text-transform: uppercase;
+    @extend %p2;
+  }
+
+  &.top {
+    background-color: $green;
+  }
+
+  &.new {
+    background-color: $gold;
+
+    .badgeText {
+      color: $black;
+    }
+  }
+}

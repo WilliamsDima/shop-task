@@ -1,0 +1,35 @@
+@import '../../../../styles/colors.scss';
+@import '../../../../styles/typography.scss';
+
+.paginationWrapp {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .pageAll {
+    margin-bottom: 1rem;
+    @extend %p3;
+    opacity: 0.5;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .pages {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 1rem;
+
+      .page {
+        margin-right: 1rem;
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

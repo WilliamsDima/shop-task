@@ -1,0 +1,13 @@
+@import '../../../../styles/typography.scss';
+
+.titlePage {
+  &.medium {
+    @extend %h2;
+  }
+  &.large {
+    @extend %h1;
+  }
+  &.small {
+    @extend %h3;
+  }
+}
